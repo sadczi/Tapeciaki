@@ -125,6 +125,7 @@
                             <constraint firstItem="i6I-f9-VY2" firstAttribute="leading" secondItem="jPe-CG-x0e" secondAttribute="leadingMargin" constant="115" id="NEd-Xe-Cin"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ZJQ-W5-ZXV" secondAttribute="trailing" constant="40" id="WTb-WL-5M8"/>
                             <constraint firstItem="i6I-f9-VY2" firstAttribute="top" secondItem="Ee2-cT-XOG" secondAttribute="bottom" constant="32" id="dr4-rd-umY"/>
+                            <constraint firstItem="i6I-f9-VY2" firstAttribute="top" secondItem="ZJQ-W5-ZXV" secondAttribute="bottom" constant="-1" id="drf-MJ-DY1"/>
                             <constraint firstItem="ZJQ-W5-ZXV" firstAttribute="top" secondItem="zUb-fU-6D4" secondAttribute="bottom" constant="38" id="fFr-9b-qbv"/>
                             <constraint firstItem="zUb-fU-6D4" firstAttribute="leading" secondItem="jPe-CG-x0e" secondAttribute="leadingMargin" constant="30" id="guq-3u-BmI"/>
                             <constraint firstAttribute="trailingMargin" secondItem="zUb-fU-6D4" secondAttribute="trailing" constant="30" id="ham-V2-DgZ"/>
@@ -141,7 +142,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eTL-bh-xWV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="835" y="274.99999999999994"/>
+            <point key="canvasLocation" x="835" y="274"/>
         </scene>
     </scenes>
     <resources>
