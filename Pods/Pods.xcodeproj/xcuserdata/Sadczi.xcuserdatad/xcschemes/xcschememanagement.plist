@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>IBAnimatable.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Tapeciaki.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-TapeciakiTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-TapeciakiUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>03A569A10C6E4741C404EDADB58D955D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7D08FCD18EFDB45281448F9670EC8319</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>82DBBFD76A6565FE131C6AC9A60C11C6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F1CA809143B68B8FB576B40829641D70</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
