@@ -16,11 +16,11 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.yellowColor()
+        self.view.backgroundColor = UIColor.yellow
     }
 
-    @IBAction func buttonClicked(sender: AnyObject) {
-        performSegueWithIdentifier("MainSegue", sender: sender)
+    @IBAction func buttonClicked(_ sender: AnyObject) {
+        performSegue(withIdentifier: "MainSegue", sender: sender)
     }
      
     override func didReceiveMemoryWarning() {

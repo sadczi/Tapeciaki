@@ -16,11 +16,11 @@ class DataHandler: NSObject  {
     override init(){
         super.init()
         
-        let App = UIApplication.sharedApplication().delegate as! AppDelegate
+        let App = UIApplication.shared.delegate as! AppDelegate
         deck = App.Data_
     }
     
-    func savePhoto(image: UIImage){
+    func savePhoto(_ image: UIImage){
         /*let manager = NSFileManager.defaultManager()
         let urls = manager.URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)
         var finalUrl: String = ""

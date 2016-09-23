@@ -9,22 +9,6 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Tapeciaki/ViewController.swift"
-            timestampString = "486646601.920276"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "buttonClicked(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "SecondViewController.swift"
             timestampString = "486984618.984182"
             startingColumnNumber = "9223372036854775807"
@@ -32,7 +16,7 @@
             startingLineNumber = "25"
             endingLineNumber = "25"
             landmarkName = "viewDidLoad()"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -48,7 +32,7 @@
             startingLineNumber = "26"
             endingLineNumber = "26"
             landmarkName = "viewDidLoad()"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -92,7 +76,7 @@
             startingLineNumber = "36"
             endingLineNumber = "36"
             landmarkName = "savePhoto(_:)"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -108,7 +92,7 @@
             startingLineNumber = "30"
             endingLineNumber = "30"
             landmarkName = "savePhoto(_:)"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

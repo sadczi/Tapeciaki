@@ -16,12 +16,12 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var spinButton: UIButton!
 
     @IBOutlet weak var display: UIImageView!
-    private var dataHandler: DataHandler = DataHandler()
+    fileprivate var dataHandler: DataHandler = DataHandler()
     var currentImage: UIImage?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.yellowColor()
+        self.view.backgroundColor = UIColor.yellow
         dataHandler.deck.shuffle()
         currentImage = dataHandler.deck.pop()
         display.image = currentImage
@@ -33,22 +33,22 @@ class SecondViewController: UIViewController {
 
 
     
-    @IBAction func spinAction(sender: AnyObject) {
+    @IBAction func spinAction(_ sender: AnyObject) {
         display.image = dataHandler.deck.pop()
         currentImage = display.image
         infoLabel.text = ""
     }
     
-    @IBAction func saveAction(sender: AnyObject) {
+    @IBAction func saveAction(_ sender: AnyObject) {
         dataHandler.savePhoto(currentImage!)
         infoLabel.text = "Zapisano!"
     }
 
-    @IBAction func shareAction(sender: AnyObject) {
+    @IBAction func shareAction(_ sender: AnyObject) {
         let shareController: SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
         shareController.setInitialText("Mój dzisiejszy tapeciak z aplikacji \"Tapeciaki\"")
-        shareController.addImage(currentImage)
-        self.presentViewController(shareController, animated: true, completion: nil)
+        shareController.add(currentImage)
+        self.present(shareController, animated: true, completion: nil)
     }
     
     
