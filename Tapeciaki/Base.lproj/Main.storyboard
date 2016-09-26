@@ -85,7 +85,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zUb-fU-6D4">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zUb-fU-6D4" customClass="SpringImageView" customModule="Spring">
                                 <frame key="frameInset" minX="-185.75029100889901" minY="-332.41674431112847" width="744.99999999999977" height="1334"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -124,7 +124,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
-                        <outlet property="display" destination="zUb-fU-6D4" id="LtA-3J-dKY"/>
+                        <outlet property="display" destination="zUb-fU-6D4" id="Qy1-3I-C3n"/>
                         <outlet property="infoLabel" destination="Ee2-cT-XOG" id="hGN-HX-LfC"/>
                         <outlet property="saveButton" destination="Cev-zX-cBV" id="JfV-VR-T97"/>
                         <outlet property="shareButton" destination="i6I-f9-VY2" id="Ig3-9L-Plh"/>

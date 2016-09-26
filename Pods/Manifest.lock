@@ -1,12 +1,22 @@
 PODS:
-  - IBAnimatable (2.2)
+  - Spring (1.0.3)
 
 DEPENDENCIES:
-  - IBAnimatable
+  - Spring (from `https://github.com/MengTo/Spring.git`, branch `swift3`)
+
+EXTERNAL SOURCES:
+  Spring:
+    :branch: swift3
+    :git: https://github.com/MengTo/Spring.git
+
+CHECKOUT OPTIONS:
+  Spring:
+    :commit: e5c127b7aa6ce31e5f4d01100a8991423a1eb498
+    :git: https://github.com/MengTo/Spring.git
 
 SPEC CHECKSUMS:
-  IBAnimatable: 41ddf0b307ebec241d5dd510f472c51fb7fe519b
+  Spring: 3f02b5dc3308572ef177b3cad0fa7bbc4b0706f7
 
-PODFILE CHECKSUM: 3ee6a0361feec7a1e932c6e5d51412e3b98ef66e
+PODFILE CHECKSUM: 07057728154a4fda8c1c8dc455049f992d5fce6e
 
 COCOAPODS: 1.0.0

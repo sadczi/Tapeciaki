@@ -9,6 +9,7 @@
 
 import UIKit
 import Social
+import Spring
 
 class SecondViewController: UIViewController , UINavigationControllerDelegate{
     
@@ -16,7 +17,10 @@ class SecondViewController: UIViewController , UINavigationControllerDelegate{
     @IBOutlet weak var spinButton: UIButton!
     @IBOutlet weak var shareButton: UIButton!
     @IBOutlet weak var saveButton: UIButton!
-    @IBOutlet weak var display: UIImageView!
+    //@IBOutlet weak var display: UIImageView!
+    @IBOutlet weak var display: SpringImageView!
+    
+    
     fileprivate var dataHandler: DataHandler = DataHandler()
     var currentImage: UIImage?
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -46,7 +50,7 @@ class SecondViewController: UIViewController , UINavigationControllerDelegate{
         shareButton.center.x = self.view.center.x
         
         //Intuitional guest recognizing for spin action
-        let swipe = UISwipeGestureRecognizer(target: self , action: #selector(SecondViewController.RespondToSwipe))
+        let swipe = UISwipeGestureRecognizer(target: self , action: #selector(SecondViewController.respondToSwipe))
         swipe.direction = UISwipeGestureRecognizerDirection.left
         self.view.addGestureRecognizer(swipe)
         
@@ -77,23 +81,22 @@ class SecondViewController: UIViewController , UINavigationControllerDelegate{
             }, completion: nil)
     }
     
-    func rotate(display:UIImageView){
-       /* UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 5, options: [.autoreverse] , animations: {
-            display.transform = CGAffineTransform(rotationAngle: CGFloat.pi * 2)
-        }, completion: nil) */
+    func shake(display:SpringImageView){
+        display.animation = "swing"
+        display.animate()
     }
     
-    func RespondToSwipe(){
+    func respondToSwipe(){
         display.image = dataHandler.deck.pop()
         currentImage = display.image
-        rotate(display: display)
+        shake(display: display)
         infoLabel.text = ""
     }
     
     @IBAction func spinAction(_ sender: AnyObject) {
         display.image = dataHandler.deck.pop()
         currentImage = display.image
-        rotate(display: display)
+        shake(display: display)
         infoLabel.text = ""
     }
     
