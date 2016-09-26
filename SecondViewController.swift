@@ -61,18 +61,39 @@ class SecondViewController: UIViewController , UINavigationControllerDelegate{
         infoLabel.center.x = shareButton.center.x
         infoLabel.text = ""
         
-        
-        
     }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        display.center.x = display.center.x - self.view.bounds.width //overriding constrains of display imageView so we can make a slide in animation in viewDidAppear
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        //Display slide in animation
+        UIView.animate(withDuration: 0.5, delay: 0.3, options: [.curveEaseOut], animations: {
+            self.display.center.x += self.view.bounds.width
+            }, completion: nil)
+    }
+    
+    func rotate(display:UIImageView){
+       /* UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 5, options: [.autoreverse] , animations: {
+            display.transform = CGAffineTransform(rotationAngle: CGFloat.pi * 2)
+        }, completion: nil) */
+    }
+    
     func RespondToSwipe(){
         display.image = dataHandler.deck.pop()
         currentImage = display.image
+        rotate(display: display)
         infoLabel.text = ""
     }
     
     @IBAction func spinAction(_ sender: AnyObject) {
         display.image = dataHandler.deck.pop()
         currentImage = display.image
+        rotate(display: display)
         infoLabel.text = ""
     }
     
