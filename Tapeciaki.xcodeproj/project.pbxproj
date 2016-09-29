@@ -276,15 +276,18 @@
 				TargetAttributes = {
 					9E2E4B3B1CF45BE3001CC813 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 6N3S386955;
 						LastSwiftMigration = 0800;
 					};
 					9E2E4B4F1CF45BE3001CC813 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 6N3S386955;
 						LastSwiftMigration = 0800;
 						TestTargetID = 9E2E4B3B1CF45BE3001CC813;
 					};
 					9E2E4B5A1CF45BE3001CC813 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 6N3S386955;
 						LastSwiftMigration = 0800;
 						TestTargetID = 9E2E4B3B1CF45BE3001CC813;
 					};
@@ -549,8 +552,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 6N3S386955;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(SRCROOT)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -598,8 +603,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 6N3S386955;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(SRCROOT)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
