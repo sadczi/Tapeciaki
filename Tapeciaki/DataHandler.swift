@@ -21,19 +21,6 @@ class DataHandler: NSObject  {
     }
     
     func savePhoto(_ image: UIImage){
-        /*let manager = NSFileManager.defaultManager()
-        let urls = manager.URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)
-        var finalUrl: String = ""
-        if let documentDirectory: NSURL = urls.first! as NSURL {
-            // This is where the database should be in the documents directory
-            let Url = documentDirectory.URLByAppendingPathComponent("tapeciak.jpg")
-            finalUrl = Url.path!
-        }
-            
-        let data = UIImageJPEGRepresentation(image, 1)
-        var ok = data?.writeToFile(finalUrl, atomically: true)
-        print(ok)
-        print("a")*/
         UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
     }
     
